@@ -1,0 +1,7 @@
+pentatrion_vite:
+  base: /build/
+  public_dir: /public
+  server:
+    host: localhost
+    port: 3000
+    https: false

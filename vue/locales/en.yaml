@@ -1,0 +1,29 @@
+page_not_found: 'Page not found:'
+
+submit: Submit
+cancel: Cancel
+back: Back
+
+todos:
+  title: Title
+  body: Description
+  add: Add todo
+  edit: Edit todo
+  empty: |-
+    Your life is empty.
+    There is nothing to do.
+  error:
+    invalid_data: Invalid data
+
+login:
+  log_in: Log In
+  register: Register
+  username: Username
+  password: Password
+  repeat_password: Repeat password
+  error:
+    login_failed: Incorrect username or password
+    register_failed: Username already taken
+    no_username: No username provided
+    no_password: No password provided
+    passwords_not_match: Passwords do not match

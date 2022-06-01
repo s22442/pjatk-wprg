@@ -1,0 +1,35 @@
+html,
+body,
+#app {
+  @apply min-h-screen;
+}
+
+body {
+  @apply bg-primary 
+    text-[color:secondary] 
+    transition;
+}
+
+#app {
+  @apply whitespace-pre-line
+    overflow-hidden
+    relative;
+
+  *::selection {
+    @apply bg-accent/75;
+  }
+}
+
+:root {
+  @apply antialiased
+    font-sans
+    text-size-[15px]
+      sm:text-size-[15.5px]
+      md:text-size-[16px]
+      lg:text-size-[17px]
+      xl:text-size-[17.5px]
+      2xl:text-size-[18px]
+    fw500;
+}
+
+@import './nprogress';

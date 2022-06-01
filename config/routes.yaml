@@ -1,0 +1,42 @@
+index_default:
+  path: /
+  controller: App\Controller\IndexController::index
+
+index:
+  path: /{vueRouting}
+  controller: App\Controller\IndexController::index
+  requirements:
+    vueRouting: ^(?!api|_(profiler|wdt)).*
+
+auth_login:
+  path: /api/auth/login
+
+auth_register:
+  path: /api/auth/register
+  controller: App\Controller\Api\AuthController::register
+  methods: POST
+
+todo_add:
+  path: /api/todos/add
+  controller: App\Controller\Api\TodosController::add
+  methods: POST
+
+todo_update:
+  path: /api/todos/update/{id}
+  controller: App\Controller\Api\TodosController::update
+  methods: PUT
+
+todo_delete:
+  path: /api/todos/delete/{id}
+  controller: App\Controller\Api\TodosController::delete
+  methods: DELETE
+
+todo_get_all:
+  path: /api/todos/get/all
+  controller: App\Controller\Api\TodosController::getAll
+  methods: GET
+
+todo_get:
+  path: /api/todos/get/{id}
+  controller: App\Controller\Api\TodosController::get
+  methods: GET
