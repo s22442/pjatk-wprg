@@ -9,7 +9,11 @@ import '@unocss/reset/tailwind.css';
 import './styles/main.scss';
 import 'uno.css';
 
-const routes = setupLayouts(generatedRoutes);
+const routes = [
+  ...setupLayouts(generatedRoutes),
+  { path: '/index.html', redirect: '/' },
+  { path: '/index.php', redirect: '/' },
+];
 
 export const createApp = ViteSSG(
   App,
